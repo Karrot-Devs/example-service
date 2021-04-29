@@ -1,5 +1,5 @@
-import { ExampleResponseDto } from './example.dto';
+import { ExampleResponseDto } from '../../../common/dto/example.dto';
 
-export interface ExampleService {
-  getExample(): () => ExampleResponseDto;
+export interface IExampleService {
+  getExample(): ExampleResponseDto;
 }

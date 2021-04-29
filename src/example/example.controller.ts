@@ -1,6 +1,6 @@
 import { Controller } from '@nestjs/common';
 import { GrpcMethod } from '@nestjs/microservices';
-import { ExampleResponseDto } from './example.dto';
+import { ExampleResponseDto } from '../../../common/dto/example.dto';
 import { ExampleService } from './example.service';
 
 @Controller()
@@ -9,6 +9,6 @@ export class ExampleController {
 
   @GrpcMethod('ExampleService')
   getExample(): ExampleResponseDto {
-    return { value: this.exampleService.getExample() };
+    return this.exampleService.getExample();
   }
 }

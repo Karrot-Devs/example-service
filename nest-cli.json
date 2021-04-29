@@ -4,5 +4,6 @@
   "compilerOptions": {
     "assets": ["**/*.proto"]
   },
+  "entryFile": "example-service/src/main",
   "watchAssets": true
 }
